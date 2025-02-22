@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./login/dashboard/src/input.css -o ./login/dashboard/src/output.css --watch",
+    "dev2": "npx tailwindcss -i ./login/src/styles/input.css -o ./login/src/styles/output.css --watch",
+    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./login/dashboard/src/input.css -o ./login/dashboard/src/output.css --minify",
+    "build2": "cross-env NODE_ENV=production npx tailwindcss -i ./login/src/styles/input.css -o ./login/src/styles/output.css --minify"
+  },
+  "dependencies": {
+    "axios": "^1.7.8",
+    "jspdf": "^2.5.2",
+    "quill": "^2.0.3",
+    "sweetalert2": "^11.6.13"
+  }
+}
